@@ -1,0 +1,90 @@
+html {
+	padding: 15px;
+	margin: 15px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	display: grid;
+	background-image: url('Photos/scattered.jpg');
+	font-weight: bolder;
+}
+
+body {
+	padding: 15px;
+	margin: 15px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	font-family: purisa;
+	border: solid 20px green;
+	border-radius: 30px;
+	background-color: wheat;
+	line-height: 20px;
+}
+
+h2 {
+	padding: 5px;
+	margin: 5px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+}
+
+form {
+	padding: 5px;
+	margin: 5px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+}
+
+
+section#sub{
+	padding: 5px;
+	margin: 5px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+}
+
+button#button{
+	border: olive 3px solid;
+	padding: 5px;
+	margin: 5px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	border-radius: 8px;
+	font-weight: bolder;
+}
+
+button#reset{
+	border: olive 3px solid;
+	padding: 5px;
+	margin: 5px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	border-radius: 8px;
+	font-weight: bolder;
+	background-color: salmon;
+}
+
+div#specs{
+	padding: 5px;
+	margin: 5px;
+}
+
+div#answer{
+	font-family: emoji;
+	font-weight: bolder;
+	color: rebeccapurple;
+	word-spacing: 3px;
+	padding: 3px;
+	margin: 3px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+}
+
+}

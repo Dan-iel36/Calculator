@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<link rel="shortcut icon" href="Photos/scattered.jpg">
+	<title>Calculator</title>
+</head>
+<body>
+	<h2>Basic Calculator</h2>
+	<form action="hello.php" method="POST" >
+		<section >
+			First number:
+			<input type="number" name="num1" min="0.0" max="100000.9" placeholder = "1st" required>
+			Operator:
+			<select name="sign">
+				<option value = "+" >+</option>
+				<option value = "-" >-</option>
+				<option value = "/" >/</option>
+				<option value = "*" >*</option>
+				<option value = "**" >**</option>
+				<option value = "%" >%</option>	
+			</select>
+			Second number:
+			<input type="number" name="num2" min="0" max="100000" placeholder="2nd" required>
+		</section>
+
+		<section id="pre" class="pre">
+			<p>How many decimal places do you want.</p>
+			<select name="decimal">
+				<option value="9" name="Default">Default</option>
+				<option value="0" >0</option>
+				<option value="1" >1</option>
+				<option value="2" >2</option>
+				<option value="3" >3</option>
+				<option value="4" >4</option>
+				<option value="5" >5</option>	
+				<option value="6" >6</option>
+				<option value="7" >7</option>
+				<option value="8" >8</option>
+				<option value="9" >9</option>
+			</select>
+		</section>
+
+		<section id="sub">
+			<button id="button" type="submit" name="submit">Calculate</button>
+		</section>
+	
+	<div id="answer"></div>
+
+	</form>
+			<button id="reset">Reset</button>
+
+	<div id="Specs">
+		<p>1st and 2nd are any numbers form 0 to 100000 with which you can perform a mathematical operation</p>
+		<p>+: is for addition like 1 + 1 = 2</p>
+		<p>-: is for subtraction like 1 - 1 = 0</p>
+		<p>/: is for division like 1 / 1 = 1</p>
+		<p>*: is for multiplication like 1 * 1 = 1</p>
+		<p>**: is for exponent like 2 **3 = 2 * 2 * 2 therefore 8</p>
+		<p>%: is for remainder like 10 % 3 = 1</p>
+		<p>Reset: is to clear recent operations</p>
+	</div>
+
+
+&copy; Merci à Robin &reg; Lydie
+<script>
+	const urlParam = new URLSearchParams(window.location.search);
+	const result = urlParam.get('result');
+	document.getElementById('answer').innerHTML = result;
+	console.log(result)
+</script>
+
+<script>
+	document.getElementById('reset').addEventListener('click', function(e) { 
+		document.getElementById('answer').innerHTML = '';
+		console.log(e);
+	});
+</script>
+</body>
+</html>
